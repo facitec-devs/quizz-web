@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Bienvenidos a #{title}
+  div
+    each p in data
+      h2 #{p.texto}
+      each op in p.opciones
+        p #{op.texto}
+
