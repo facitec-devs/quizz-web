@@ -8,4 +8,9 @@ block content
       h2 #{p.texto}
       each op in p.opciones
         p #{op.texto}
-
+  hr
+  div(ng-app="app")
+    form(ng-submit="",method="post")
+        label Pregunta
+            input(type="text", name="pregunta.texto", ng-model="pregunta.texto")
+        input(type="submit")
