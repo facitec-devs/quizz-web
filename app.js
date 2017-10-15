@@ -11,8 +11,8 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var pregunta = require('./routes/pregunta');
 
-var mongoDBuri = process.env.MONGODB_URI | 'mongodb://localhost/test';
-mongoose.connect(mongoDBuri, { useMongoClient: true });
+var uri = process.env.MONGODB_URI || 'mongodb://localhost/test';
+mongoose.connect(uri, { useMongoClient: true });
 
 
 var app = express();
