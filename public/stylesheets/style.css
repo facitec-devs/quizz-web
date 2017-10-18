@@ -12,11 +12,6 @@ input{
 }
 
 input[type="text"]{
-	border:none;
 	padding: 10px;
 	box-shadow: none;
-}
-
-input[type="text"]:focus{
-	border: none;
 }

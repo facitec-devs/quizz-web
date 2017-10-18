@@ -5,12 +5,10 @@ require('mongoose-query-random');
 
 router.get('/', function(req, res, next) {
 
-		/*Pregunta.find().random(10,true,function(err,data) {
+		Pregunta.find().random(10,true,function(err,data) {
 			res.json(data);
-		})*/
-		Pregunta.find(function(err,data) {
-			res.json(data);
-		})
+		});
+		
   	
 });
 
